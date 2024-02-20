@@ -1,10 +1,10 @@
 <h1> Asssignment 01 : Understanding and implementing of the activation functions</h1>
 <b>THEORETICAL UNDERSTANDING</b><br>
 <b>ACTIVATION FUNCTIONS:</b>  Activation functions in Deep learning are mathematical formulas that determine how neurons in the network respond or activate when they receive a set of inputs  Without activation functions, a Neural Network wouldn't perform better than a Regression model. The activation function introduces non-linearity into the model.<br>
-<img src="neuron1.jpg" alt="Neural network" width="500" height="600"><br>
+<img src="neuron1.jpg" alt="Neural network" width="700" height="400">
 Neural Network is modeled after the Neurons in the brain. The brain receives a surplus of information, but not everything is useful or required, so the brain filters out information and only takes in the required information. Activation functions are the gates of a Neural network, allowing only useful information to pass through.<br>
 For an example we are deciding a carbon steel rod is ductile or not using a deep learning model. The ductility is an important property of steel where the steel product is subjected to be bended without fracture. In the input layers we are feeding Carbon in percentages, hardness in Rockwell C scale and ultimate tensile strength in MPa as inputs of different carbon steels and ductility is the result in output layer as 0 and 1. Based on the inputs, the model will decide if the steel is ductile (1) or not (0).<br>
- <img src="ductilityneuron.jpg" alt="Neural network to predict steel is ductile or brittle" width="500" height="600"><br>
+ <img src="ductilityneuron.jpg" alt="Neural network to predict steel is ductile or brittle" width="700" height="400"><br>
  <p>Without of application of activation function, sigmoid, we would end up with result analyzed by linear regression:
  <pre>Ductility=W1*C+W2*H+W3*UTS +b</pre></p><br>
  We can see that the output is a Linear equation and cannot perform well with non-linear data. Applying the Activation function enables the Network to perform much better. Activation functions can regulate the outputs of nodes and add a level of complexity that neural network without activation functions cannot achieve.<br>
@@ -21,20 +21,20 @@ slope for zero and negative input values.<br>
 and returns the probability that the input belongs to a specific class.<br> 
 7. Swish is a new activation function discovered by Google researchers. It performs better than ReLu with a similar level of 
 computational efficiency.<br><br>
-The mathematical formulas and plots of different activation functions are summarized in the following table:<br>
- <img src="activationFunctions.jpg" alt="Different activation functions" width="500" height="600"><br><br>
- MATHEMATICAL EXPLORATION:<br>
-  <img src="ductilityneuron.jpg" alt="Neuron layers to predict metal is ductile" width="500" height="600"><br><br>
+<b>The mathematical formulas and plots of different activation functions are summarized in the following table:</b><br>
+ <img src="activationFunctions.jpg" alt="Different activation functions" width="800" height="500"><br>
+ <b>MATHEMATICAL EXPLORATION:<br></b>
+  <img src="ductilityneuron.jpg" alt="Neuron layers to predict metal is ductile" width="700" height="400"><br><br>
   <pre>η = Learning rate, L= Loss
 Ductility = [C*W1 + H*W2 + UTS*W3] + b1
 C= % of carbon, H=Hardness in HRC C scale, UTS= ultimate tensile strength.
 Z=activation function = sigmoid activation function = 1/(1+e-Ductility)
 Loss=L= (Actual ductility-Predicted ductility)2 
 </pre><br>
- <img src="sigmoid.jpg" alt="Sigmoid" width="500" height="600"><br><br>
+ <img src="sigmoid.jpg" alt="Sigmoid" width="700" height="400"><br><br>
 If the prediction is less than 0.5, the neuron will not fire and the carbon steel will not be ductile, it will be brittle. If the prediction is greater than 0.5, the neuron will be activated and the property of steel will be predicted as ductile metal.<br>
 By taking derivative of sigmoid function the range of prediction is between 0 and 0.25.
- <img src="derivativesigmoid.jpg" alt="Derivative of Sigmoid" width="500" height="600"><br><br>
+ <img src="derivativesigmoid.jpg" alt="Derivative of Sigmoid" width="700" height="400"><br><br>
  Relu activation function:<br>
-  <img src="relu.jpg" alt="Relu activation function" width="500" height="600"><br><br>
+  <img src="relu.jpg" alt="Relu activation function" width="700" height="400"><br>
 In the hidden layer relu activation function is utilized whereas sigmoid activation function is used in output layer.
