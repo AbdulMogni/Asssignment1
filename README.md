@@ -22,7 +22,7 @@ and returns the probability that the input belongs to a specific class.<br>
 <b>The mathematical formulas and plots of different activation functions are summarized in the following table:</b><br>
  <img src="activationFunctions.jpg" alt="Different activation functions" width="900" height="600"><br>
  <b>MATHEMATICAL EXPLORATION:<br></b>
-  <img src="ductilitylayers.jpg" alt="Neuron layers to predict metal is ductile" width="900" height="300"><br><br>
+  <img src="ductilitylayers.jpg" alt="Neuron layers to predict metal is ductile" width="900" height="400"><br><br>
   <pre>η = Learning rate, L= Loss
 Ductility = [C*W1 + H*W2 + UTS*W3] + b1
 C= % of carbon, H=Hardness in HRC C scale, UTS= ultimate tensile strength.
