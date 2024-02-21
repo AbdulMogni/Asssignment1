@@ -4,8 +4,7 @@
 <img src="neuron1.jpg" alt="Neural network" width="900" height="400">
 Neural Network is modeled after the Neurons in the brain. The brain receives a surplus of information, but not everything is useful or required, so the brain filters out information and only takes in the required information. Activation functions are 
 the gates of a Neural network, allowing only useful information to pass through.<br>
-For an example we are deciding a carbon steel rod is ductile or not using a deep learning model. The ductility is an important property of steel where the steel product is subjected to be bended without fracture. In the input layers we are feeding Carbon in percentages, hardness in Rockwell C scale and ultimate tensile strength in MPa as inputs of different carbon steels and ductility is the result in output layer as 0 and 1. Based on the inputs, the model will decide if the steel is ductile (1) or 
-not (0).<br>
+For an example we are deciding a carbon steel rod is ductile or not using a deep learning model. The ductility is an important property of steel where the steel product is subjected to be bended without fracture. In the input layers we are feeding Carbon in percentages, hardness in Brinnel Hardness scale (BHN) and ultimate tensile strength in ksi as inputs of different carbon steels and ductility is the result in output layer as 0 and 1. Based on the inputs, the model will decide if the steel is ductile (1) or not (0).<br>
  <img src="ductilityneuron.jpg" alt="Neural network to predict steel is ductile or brittle" width="900" height="300"><br>
  <p>Without of application of activation function, sigmoid, we would end up with result analyzed by linear regression:
  <pre>Ductility=W1*C+W2*H+W3*UTS +b</pre></p><br>
